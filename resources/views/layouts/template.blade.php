@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
     <title>@yield('title')</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href=" css/fontawesome.css">
+    <link rel="stylesheet" href=" css/templatemo-stand-blog.css">
+    <link rel="stylesheet" href=" css/owl.css">
     <!--
-    Cafe House Template
-    http://www.templatemo.com/tm-466-cafe-house
+
+    TemplateMo 551 Stand Blog
+
+    https://templatemo.com/tm-551-stand-blog
+
     -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet'
-          type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/templatemo-style.css" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
+
 <body>
-<!-- Preloader -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
+
+<!-- ***** Preloader Start ***** -->
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </div>
-<!-- End Preloader -->
-<div class="tm-top-header">
+<!-- ***** Preloader End ***** -->
+
+<!-- Header -->
+<header class="">
     @include('layouts.navbar')
-</div>
+</header>
+
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+@yield('banner')
+<!-- Banner Ends Here -->
 
 @yield('content')
 
+
 <footer>
     @include('layouts.footer')
-</footer> <!-- Footer content-->
-<!-- JS -->
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
-<script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+<!-- Additional Scripts -->
+<script src=" js/custom.js"></script>
+<script src=" js/owl.js"></script>
+<script src=" js/slick.js"></script>
+<script src=" js/isotope.js"></script>
+<script src=" js/accordions.js"></script>
+
+<script language = "text/Javascript">
+    cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+    function clearField(t){                   //declaring the array outside of the
+        if(! cleared[t.id]){                      // function makes it static and global
+            cleared[t.id] = 1;  // you could use true and false, but that's more typing
+            t.value='';         // with more chance of typos
+            t.style.color='#fff';
+        }
+    }
+</script>
 
 </body>
 </html>

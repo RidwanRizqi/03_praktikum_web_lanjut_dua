@@ -1,21 +1,31 @@
-<div class="container">
-    <div class="row">
-        <div class="tm-top-header-inner">
-            <div class="tm-logo-container">
-                <img src="img/logo.png" alt="Logo" class="tm-site-logo">
-                <h1 class="tm-site-name tm-handwriting-font">Cafe House</h1>
-            </div>
-            <div class="mobile-menu-icon">
-                <i class="fa fa-bars"></i>
-            </div>
-            <nav class="tm-nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="today-special.html">Today Special</a></li>
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><h2>Stand Blog<em>.</em></h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="post-details.html">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="post-details.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </div>
-</div>
+</nav>

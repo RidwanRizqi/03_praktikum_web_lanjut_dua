@@ -1,195 +1,236 @@
-@extends('layouts.template');
+@extends('layouts.template')
 
 @section('title', 'Home')
 
-@section('content')
-    <section class="tm-welcome-section">
-        <div class="container tm-position-relative">
-            <div class="tm-lights-container">
-                <img src="img/light.png" alt="Light" class="light light-1">
-                <img src="img/light.png" alt="Light" class="light light-2">
-                <img src="img/light.png" alt="Light" class="light light-3">
+@section('banner')
+    <div class="main-banner header-text">
+        <div class="container-fluid">
+            <div class="owl-banner owl-carousel">
+                <div class="item">
+                    <img src=" images/banner-item-01.jpg" alt="">
+                    <div class="item-content">
+                        <div class="main-content">
+                            <div class="meta-category">
+                                <span>Fashion</span>
+                            </div>
+                            <a href="post-details.html"><h4>Morbi dapibus condimentum</h4></a>
+                            <ul class="post-info">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">May 12, 2020</a></li>
+                                <li><a href="#">12 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src=" images/banner-item-02.jpg" alt="">
+                    <div class="item-content">
+                        <div class="main-content">
+                            <div class="meta-category">
+                                <span>Nature</span>
+                            </div>
+                            <a href="post-details.html"><h4>Donec porttitor augue at velit</h4></a>
+                            <ul class="post-info">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">May 14, 2020</a></li>
+                                <li><a href="#">24 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src=" images/banner-item-03.jpg" alt="">
+                    <div class="item-content">
+                        <div class="main-content">
+                            <div class="meta-category">
+                                <span>Lifestyle</span>
+                            </div>
+                            <a href="post-details.html"><h4>Best HTML Templates on TemplateMo</h4></a>
+                            <ul class="post-info">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">May 16, 2020</a></li>
+                                <li><a href="#">36 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src=" images/banner-item-04.jpg" alt="">
+                    <div class="item-content">
+                        <div class="main-content">
+                            <div class="meta-category">
+                                <span>Fashion</span>
+                            </div>
+                            <a href="post-details.html"><h4>Responsive and Mobile Ready Layouts</h4></a>
+                            <ul class="post-info">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">May 18, 2020</a></li>
+                                <li><a href="#">48 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src=" images/banner-item-05.jpg" alt="">
+                    <div class="item-content">
+                        <div class="main-content">
+                            <div class="meta-category">
+                                <span>Nature</span>
+                            </div>
+                            <a href="post-details.html"><h4>Cras congue sed augue id ullamcorper</h4></a>
+                            <ul class="post-info">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">May 24, 2020</a></li>
+                                <li><a href="#">64 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src=" images/banner-item-06.jpg" alt="">
+                    <div class="item-content">
+                        <div class="main-content">
+                            <div class="meta-category">
+                                <span>Lifestyle</span>
+                            </div>
+                            <a href="post-details.html"><h4>Suspendisse nec aliquet ligula</h4></a>
+                            <ul class="post-info">
+                                <li><a href="#">Admin</a></li>
+                                <li><a href="#">May 26, 2020</a></li>
+                                <li><a href="#">72 Comments</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row tm-welcome-content">
-                <h2 class="white-text tm-handwriting-font tm-welcome-header"><img src="img/header-line.png" alt="Line"
-                                                                                  class="tm-header-line">&nbsp;Welcome To&nbsp;&nbsp;<img
-                        src="img/header-line.png" alt="Line" class="tm-header-line"></h2>
-                <h2 class="gold-text tm-welcome-header-2">Cafe House</h2>
-                <p class="gray-text tm-welcome-description">Cafe House template is a mobile-friendly responsive <span
-                        class="gold-text">Bootstrap v3.3.5</span> layout by <span class="gold-text">templatemo</span>. Lorem
-                    ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusnec quam felis, ultricies
-                    nec, pellentesque eu, pretium quis, sem.</p>
-                <a href="#main" class="tm-more-button tm-more-button-welcome">Details</a>
-            </div>
-            <img src="img/table-set.png" alt="Table Set" class="tm-table-set img-responsive">
-        </div>
-    </section>
-    <div class="tm-main-section light-gray-bg">
-        <div class="container" id="main">
-            <section class="tm-section row">
-                <div class="col-lg-9 col-md-9 col-sm-8">
-                    <h2 class="tm-section-header gold-text tm-handwriting-font">The Best Coffee for you</h2>
-                    <h2>Cafe House</h2>
-                    <p class="tm-welcome-description">This is free HTML5 website template from <span class="blue-text">template</span><span
-                            class="green-text">mo</span>. Fndimentum rhoncus, sem quam semper libero, sit amet adipiscing
-                        sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec
-                        odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Ettiam sit amet orci
-                        eget eros faucibus tincidunt.</p>
-                    <a href="#" class="tm-more-button margin-top-30">Read More</a>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 tm-welcome-img-container">
-                    <div class="inline-block shadow-img">
-                        <img src="img/1.jpg" alt="Image" class="img-circle img-thumbnail">
-                    </div>
-                </div>
-            </section>
-            <section class="tm-section tm-section-margin-bottom-0 row">
-                <div class="col-lg-12 tm-section-header-container">
-                    <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo"
-                                                                                     class="tm-site-logo"> Popular Items
-                    </h2>
-                    <div class="tm-hr-container">
-                        <hr class="tm-hr">
-                    </div>
-                </div>
-                <div class="col-lg-12 tm-popular-items-container">
-                    <div class="tm-popular-item">
-                        <img src="img/popular-1.jpg" alt="Popular" class="tm-popular-item-img">
-                        <div class="tm-popular-item-description">
-                            <h3 class="tm-handwriting-font tm-popular-item-title"><span
-                                    class="tm-handwriting-font bigger-first-letter">a</span>mericano</h3>
-                            <hr class="tm-popular-item-hr">
-                            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-                                sem neque. sed ipsum.</p>
-                            <div class="order-now-container">
-                                <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tm-popular-item">
-                        <img src="img/popular-2.jpg" alt="Popular" class="tm-popular-item-img">
-                        <div class="tm-popular-item-description">
-                            <h3 class="tm-handwriting-font tm-popular-item-title"><span
-                                    class="tm-handwriting-font bigger-first-letter">c</span>appuccino</h3>
-                            <hr class="tm-popular-item-hr">
-                            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-                                sem neque. sed ipsum.</p>
-                            <div class="order-now-container">
-                                <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tm-popular-item">
-                        <img src="img/popular-3.jpg" alt="Popular" class="tm-popular-item-img">
-                        <div class="tm-popular-item-description">
-                            <h3 class="tm-handwriting-font tm-popular-item-title"><span
-                                    class="tm-handwriting-font bigger-first-letter">m</span>ocha</h3>
-                            <hr class="tm-popular-item-hr">
-                            <p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-                                sem neque. sed ipsum.</p>
-                            <div class="order-now-container">
-                                <a href="#" class="order-now-link tm-handwriting-font">Order Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="tm-section row">
-                <div class="col-lg-12 tm-section-header-container">
-                    <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo"
-                                                                                     class="tm-site-logo"> Today's Special
-                    </h2>
-                    <div class="tm-hr-container">
-                        <hr class="tm-hr">
-                    </div>
-                </div>
-                <div class="col-lg-12 tm-special-container margin-top-60">
-                    <div class="tm-special-container-left"> <!-- left -->
-                        <div class="tm-special-item">
-                            <div class="tm-special-img-container">
-                                <img src="img/special-1.jpg" alt="Special" class="tm-special-img img-responsive">
-                                <a href="#">
-                                    <div class="tm-special-description">
-                                        <h3 class="tm-special-title">Donec pede justo</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tm-special-container-right"> <!-- right -->
-                        <div>
-                            <div class="tm-special-item">
-                                <div class="tm-special-img-container">
-                                    <img src="img/special-2.jpg" alt="Special" class="img-responsive">
-                                    <a href="#">
-                                        <div class="tm-special-description">
-                                            <h3 class="tm-special-title">Etiam sit amet</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tm-special-container-lower">
-                            <div class="tm-special-item">
-                                <div class="tm-special-img-container">
-                                    <img src="img/special-3.jpg" alt="Special" class="img-responsive">
-                                    <a href="#">
-                                        <div class="tm-special-description">
-                                            <p>Vivamus elementum</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="tm-special-item">
-                                <div class="tm-special-img-container">
-                                    <img src="img/special-4.jpg" alt="Special" class="img-responsive">
-                                    <a href="#">
-                                        <div class="tm-special-description">
-                                            <p>Quisque rutrum.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="tm-section">
-                <div class="row">
-                    <div class="col-lg-12 tm-section-header-container">
-                        <h2 class="tm-section-header gold-text tm-handwriting-font"><img src="img/logo.png" alt="Logo"
-                                                                                         class="tm-site-logo"> Daily Menu
-                        </h2>
-                        <div class="tm-hr-container">
-                            <hr class="tm-hr">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="tm-daily-menu-container margin-top-60">
-                        <div class="col-lg-4 col-md-4">
-                            <img src="img/menu-board.png" alt="Menu board" class="tm-daily-menu-img">
-                        </div>
-                        <div class="col-lg-8 col-md-8">
-                            <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam
-                                ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
-                                rhoncus.</p>
-                            <ol class="margin-top-30">
-                                <li>Tellus eget condimentum rhoncus.</li>
-                                <li>Sem quam semper libero.</li>
-                                <li>Sit amet adipiscing sem neque sed ipsum.</li>
-                                <li>Nam quam nunc, blandit vel, luctus pulvinar.</li>
-                                <li>Maecenas nec odio et ante tincidunt tempus.</li>
-                                <li>Donec vitae sapien ut libero ventenatis faucibus.</li>
-                            </ol>
-                            <a href="#" class="tm-more-button margin-top-30">Read More</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
     </div>
+@endsection
+
+@section('content')
+    <section class="blog-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="all-blog-posts">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="blog-post">
+                                    <div class="blog-thumb">
+                                        <img src="assets/images/blog-post-01.jpg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>Lifestyle</span>
+                                        <a href="post-details.html"><h4>Best Template Website for HTML CSS</h4></a>
+                                        <ul class="post-info">
+                                            <li><a href="#">Admin</a></li>
+                                            <li><a href="#">May 31, 2020</a></li>
+                                            <li><a href="#">12 Comments</a></li>
+                                        </ul>
+                                        <p>Stand Blog is a free HTML CSS template for your CMS theme. You can easily adapt or customize it for any kind of CMS or website builder. You are allowed to use it for your business. You are NOT allowed to re-distribute the template ZIP file on any template collection site for the download purpose. <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">Contact TemplateMo</a> for more info. Thank you.</p>
+                                        <div class="post-options">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <ul class="post-tags">
+                                                        <li><i class="fa fa-tags"></i></li>
+                                                        <li><a href="#">Beauty</a>,</li>
+                                                        <li><a href="#">Nature</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul class="post-share">
+                                                        <li><i class="fa fa-share-alt"></i></li>
+                                                        <li><a href="#">Facebook</a>,</li>
+                                                        <li><a href="#"> Twitter</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="blog-post">
+                                    <div class="blog-thumb">
+                                        <img src="assets/images/blog-post-02.jpg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>Healthy</span>
+                                        <a href="post-details.html"><h4>Etiam id diam vitae lorem dictum</h4></a>
+                                        <ul class="post-info">
+                                            <li><a href="#">Admin</a></li>
+                                            <li><a href="#">May 24, 2020</a></li>
+                                            <li><a href="#">36 Comments</a></li>
+                                        </ul>
+                                        <p>You can support us by contributing a little via PayPal. Please contact <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">TemplateMo</a> via Live Chat or Email. If you have any question or feedback about this template, feel free to talk to us. Also, you may check other CSS templates such as <a rel="nofollow" href="https://templatemo.com/tag/multi-page" target="_parent">multi-page</a>, <a rel="nofollow" href="https://templatemo.com/tag/resume" target="_parent">resume</a>, <a rel="nofollow" href="https://templatemo.com/tag/video" target="_parent">video</a>, etc.</p>
+                                        <div class="post-options">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <ul class="post-tags">
+                                                        <li><i class="fa fa-tags"></i></li>
+                                                        <li><a href="#">Best Templates</a>,</li>
+                                                        <li><a href="#">TemplateMo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul class="post-share">
+                                                        <li><i class="fa fa-share-alt"></i></li>
+                                                        <li><a href="#">Facebook</a>,</li>
+                                                        <li><a href="#">Twitter</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="blog-post">
+                                    <div class="blog-thumb">
+                                        <img src="assets/images/blog-post-03.jpg" alt="">
+                                    </div>
+                                    <div class="down-content">
+                                        <span>Fashion</span>
+                                        <a href="post-details.html"><h4>Donec tincidunt leo nec magna</h4></a>
+                                        <ul class="post-info">
+                                            <li><a href="#">Admin</a></li>
+                                            <li><a href="#">May 14, 2020</a></li>
+                                            <li><a href="#">48 Comments</a></li>
+                                        </ul>
+                                        <p>Nullam at quam ut lacus aliquam tempor vel sed ipsum. Donec pellentesque tincidunt imperdiet. Mauris sit amet justo vulputate, cursus massa congue, vestibulum odio. Aenean elit nunc, gravida in erat sit amet, feugiat viverra leo. Phasellus interdum, diam commodo egestas rhoncus, turpis nisi consectetur nibh, in vehicula eros orci vel neque.</p>
+                                        <div class="post-options">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <ul class="post-tags">
+                                                        <li><i class="fa fa-tags"></i></li>
+                                                        <li><a href="#">HTML CSS</a>,</li>
+                                                        <li><a href="#">Photoshop</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6">
+                                                    <ul class="post-share">
+                                                        <li><i class="fa fa-share-alt"></i></li>
+                                                        <li><a href="#">Facebook</a>,</li>
+                                                        <li><a href="#">Twitter</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="main-button">
+                                    <a href="blog.html">View All Posts</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    @include('layouts.sidebar')
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
