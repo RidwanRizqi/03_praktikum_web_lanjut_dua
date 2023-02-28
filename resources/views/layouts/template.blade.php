@@ -16,9 +16,9 @@
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href=" css/fontawesome.css">
-    <link rel="stylesheet" href=" css/templatemo-stand-blog.css">
-    <link rel="stylesheet" href=" css/owl.css">
+    <link rel="stylesheet" href="{{URL::asset('css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/templatemo-stand-blog.css')}}">
+    <link rel="stylesheet" href="{{URL::asset('css/owl.css')}}">
     <!--
 
     TemplateMo 551 Stand Blog
@@ -62,11 +62,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 <!-- Additional Scripts -->
-<script src=" js/custom.js"></script>
-<script src=" js/owl.js"></script>
-<script src=" js/slick.js"></script>
-<script src=" js/isotope.js"></script>
-<script src=" js/accordions.js"></script>
+{{ URL::asset('assets/css/bootstrap.min.css') }}
+<script src="{{ URL::asset('js/custom.js') }}"></script>
+<script src="{{ URL::asset('js/owl.js') }}"></script>
+<script src="{{ URL::asset('js/slick.js') }}"></script>
+<script src="{{ URL::asset('js/isotope.js') }}"></script>
+<script src="{{ URL::asset('js/accordions.js') }}"></script>
 
 <script language = "text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
