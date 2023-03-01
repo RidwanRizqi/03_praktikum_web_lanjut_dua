@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     */
-    public function __invoke($title)
+    public function index()
+    {
+        return view('news');
+    }
+    public function show($title)
     {
         return view('news', ['title' => $title]);
     }
